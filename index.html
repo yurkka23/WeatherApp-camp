@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="weather-wrapper">
+            <div class="weather-inner-wrapper">
+                <div class="wrapper-titles">
+                    <div class="weather-title">WeatherApp</div>
+                    <div class="weather-subtitle">Search the weather in any city!</div>
+                </div>
+                <form class="form-wrapper" onsubmit="return false">
+                    <input id="city" type="text"   class="city-input" placeholder="Enter city...">
+                    <input id="city-search" value="Search" type="submit" class="search-button">
+                </form>
+            </div>
+
+            <div id="error" class="error-message">
+                <div class="error-wrapper">
+                    <div class="error-icon">&#128546;</div>
+                    <div>
+                        <div class="error-html">Error!!!</div>
+                        <div class="error-text"></div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+
+        <div id="info-weather" class="info-weather-wrapper">
+            <div class="info-city-wrapper">
+                <div class="info-icon">
+                   
+                </div>
+                <div class="info-text">
+                    <div class="info-city-header"></div>
+                    <div class="info-city-text"></div>
+                    <div class="date"></div>
+                </div>
+            </div>
+
+            <div class="info-inner-wraper">
+                <div class="temp-wrapper">
+                    <div class="temp"></div>
+                    <div class="temp-info"></div>
+                </div>
+
+                <div class="report-wraper">
+                    <div class="report-header">Local weather report</div>
+                    <div class="report-body">
+                        <div class="report-parameters">
+                            <div class="report-parameter">
+                                <div class="parameter-header">Feels like</div>
+                                <div id="feelslike" class="parameter-info"></div>
+                            </div>
+                            <div class="report-parameter">
+                                <div  class="parameter-header">Humidity</div>
+                                <div id="humidity" class="parameter-info"></div>
+                            </div>
+                            <div class="report-parameter">
+                                <div  class="parameter-header">Sunrise</div>
+                                <div id="sunrise" class="parameter-info"></div>
+                            </div>
+                            <div class="report-parameter">
+                                <div  class="parameter-header">Visability</div>
+                                <div id="visibility" class="parameter-info"></div>
+                            </div>
+                            <div class="report-parameter">
+                                <div  class="parameter-header">Sunset</div>
+                                <div id="sunset" class="parameter-info"></div>
+                            </div>
+                            <div class="report-parameter">
+                                <div  class="parameter-header">Presure</div>
+                                <div id="pressure" class="parameter-info"></div>
+                            </div>
+                        </div>
+                        <div class="report-view">
+                            <div class="view-icon">
+                               
+                            </div>
+                             <div class="view-time"></div>
+                            <div class="view-day"></div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+    <script src="script.js"></script>
+</html>
